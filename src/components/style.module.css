@@ -1,0 +1,119 @@
+.header{
+  display:block;
+  height:100px;
+  width:100%;
+
+}
+.header > div{
+
+}
+.headerFirst{
+  width:20%;
+  height:100%;
+  float:left;
+
+}
+.headerMiddle{
+  height:100%;
+  width:50%;
+  text-align: center;
+  float:left;
+
+}
+.headerMiddleContent{
+  position:relative;
+  text-align: center;
+  display: inline-block;
+  padding:3px 5px;
+  width:130px;
+
+}
+.headerMiddleText{
+  font-size: 20px;
+  text-align: center;
+}
+.headerMiddleBox{
+  border:1px solid black;
+
+}
+.headerSinceText{
+  position:relative;
+  text-align: center;
+}
+.headerSinceText::before{
+  position: relative;
+  right:10px;
+  content:'|';
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.headerSinceText::after{
+  position: relative;
+  left:15px;
+  content:'|';
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.headerYearText{
+  text-align: center;
+  font-size: 30px;
+}
+
+.headerLast{
+  height:100%;
+  width:30%;
+  text-align: right;
+  float:right;
+}
+.headerLastTop{
+
+  text-align: right;
+  padding:5px
+
+}
+.headerLastTop > span:nth-child(odd){
+  padding:15px;
+}
+.headerLastTop > span:nth-child(even){
+  margin:0px;
+}
+.headerLastBottom{
+  text-align: right;
+  padding:5px 35px 5px;
+}
+.headerLastBottom > div{
+  width:100%;
+}
+.headerLastBottom > div > span{
+  display: inline-block;
+  width:50%;
+  text-align: right;
+}
+.headerLastBottom > div > span:nth-last-child(even){
+  text-align: right;
+}
+.headerLastBottom > div > span:nth-last-child(even)::after{
+  content:':'
+}
+.logoStyle{
+  height:100%;
+}
+.navbar{
+  background:black;
+}
+.navbar > ul{
+  margin:0;
+  padding:0;
+  width:100%;
+  list-style-type: none;
+}
+.navbar > ul >li{
+  padding:15px 20px;
+
+  display: inline-block;
+  border-right:1px solid white;
+}
+.navbar > ul >li > a{
+  color:white;
+  text-decoration: none;
+}
